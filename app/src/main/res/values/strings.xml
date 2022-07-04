@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">chatter</string>
+
+    <string name="phone_number">Phone Number</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="cont">Continue</string>
+    <string name="resent_otp">Resent OTP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="sign_up">SignUp</string>
+    <string name="already_have_account">Already have account !!</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="sign_up_with_phone">Sign Up with Phone</string>
+    <string name="account_not_exists">Account Not exists !!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_with_phone">Sign In With Phone</string>
+    <string name="click_here_to_signup">No Account Exist !! Click Here to Sign Up</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="group_chat">Group Chat</string>
+    <string name="vijay">Vijay</string>
+    <string name="last_message">Last Message</string>
+
+
+</resources>
