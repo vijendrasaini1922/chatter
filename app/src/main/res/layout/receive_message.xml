@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_receiver">
+
+        <TextView
+            android:id="@+id/text_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="300dp"
+            android:maxHeight="500dp"
+            android:minHeight="40dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="5dp"
+            android:text="@string/received_messaged"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/time_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="30dp"
+            android:text="@string/time"
+            android:textSize="10sp"
+            tools:ignore="RtlHardcoded,SmallSp" />
+
+    </LinearLayout>
+</RelativeLayout>
