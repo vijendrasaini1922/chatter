@@ -25,6 +25,13 @@
     <string name="group_chat">Group Chat</string>
     <string name="vijay">Vijay</string>
     <string name="last_message">Last Message</string>
+    <string name="todo">TODO</string>
+    <string name="enter_your_message">Enter Your Message</string>
+    <string name="audio_call">Audio Call</string>
+    <string name="video_call">Video Call</string>
+    <string name="received_messaged">Received Messaged</string>
+    <string name="send_message">Send Message</string>
+    <string name="time">time</string>
 
 
 </resources>

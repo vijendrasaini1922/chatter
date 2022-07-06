@@ -3,10 +3,10 @@ package com.vijay.chatter.Adapters
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import androidx.fragment.app.FragmentStatePagerAdapter
 import com.vijay.chatter.Fragments.CallsFragment
 import com.vijay.chatter.Fragments.ChatsFragment
 import com.vijay.chatter.Fragments.StatusFragment
+
 
 class FragmentsAdapter(fm: FragmentManager): FragmentPagerAdapter(fm)  {
     private val count = 3

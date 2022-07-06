@@ -3,11 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/drawable/bg_receiver.xml" value="0.102" />
+        <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/drawable/bg_send.xml" value="0.102" />
+        <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/drawable/message_box_shape.xml" value="0.2505" />
+        <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/drawable/messageboxbg.xml" value="0.12" />
+        <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/layout/activity_chat.xml" value="0.23508771929824562" />
         <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/layout/activity_signup.xml" value="0.2" />
         <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/layout/fragment_call.xml" value="0.2359375" />
         <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/layout/fragment_chats.xml" value="0.25" />
+        <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/layout/receive_message.xml" value="0.4" />
+        <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/layout/send_message.xml" value="0.4" />
         <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/layout/show_user.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/viraj/AndroidStudioProjects/chatter2/app/src/main/res/menu/menu.xml" value="0.1" />
       </map>

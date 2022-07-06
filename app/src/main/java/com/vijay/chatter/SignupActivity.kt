@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.vijay.chatter.Model.Users
 import com.vijay.chatter.databinding.ActivitySignupBinding
@@ -17,7 +18,7 @@ class SignupActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignupBinding
     private lateinit var auth: FirebaseAuth
-    private lateinit var database: FirebaseDatabase
+    private lateinit var database: DatabaseReference
     lateinit var progressDialog: ProgressDialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +29,7 @@ class SignupActivity : AppCompatActivity() {
         binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
-        database = FirebaseDatabase.getInstance()
+        database = FirebaseDatabase.getInstance().reference
 
         progressDialog = ProgressDialog(this@SignupActivity)
         progressDialog.setTitle("Creating Account")
@@ -61,17 +62,20 @@ class SignupActivity : AppCompatActivity() {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d(TAG, "createUserWithEmail:success")
 
+                        val userId = task.result.user?.uid
                         val user = Users(
                             binding.txtUsername.text.toString().trim(),
                             binding.txtEmail.text.toString().trim(),
-                            binding.txtPassword.text.toString().trim()
+                            binding.txtPassword.text.toString().trim(),
+                            userId
                         )
-                        val userId = task.result.user?.uid
-                        if (userId != null) {
-                            database.reference.child("Users").child(userId).setValue(user)
-                        }
-                    //val user = auth.currentUser
 
+                        if (userId != null) {
+                            database.child("Users").child(userId).setValue(user)
+                        }
+                        //val user = auth.currentUser
+                        startActivity(Intent(this, MainActivity::class.java))
+                        finish()
                         //updateUI(user)
                     } else {
                         // If sign in fails, display a message to the user.
